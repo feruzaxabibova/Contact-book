@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="py-4">
+        <div class="container">
+            <h1 class="text-white my-3 mb-5 text-center">Contact book</h1>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-between">
+                <section class="col-md-5 mb-5 mb-md-0">
+                    <h2 class="h4 mb-4">Add new contact</h2>
+
+                    <form class="js-new-contact-form" method="POST">
+
+                        <div class="input-group mb-3">
+                            <input class="form-control js-new-contact-form__name-input" type="text" name="name" aria-label="Name" placeholder="Name" required>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <input class="form-control js-new-contact-form__surname-input" type="text" name="Surname" aria-label="Surname" placeholder="Surname" required>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <input class="form-control js-new-contact-form__contact-input" type="tel" name="Contact" aria-label="Contact" placeholder="Contact" required>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <input class="form-control js-new-contact-form__relationship-input" type="tel" name="Relationship" aria-label="Relationship" placeholder="Relationship" required>
+                        </div>
+
+                        <button class="btn btn-block btn-success w-25 fw-bold">Save</button>
+                    </form>
+                </section>
+
+                <section class="col-md-5">
+                    <h2 class="h4 mb-4">Contacts' list</h2>
+
+                    <ul class="contacts list-group">
+                        <li class="w-50 contact__item list-group-item">
+                            <div class="fw-bold contact__fullname">Palonchi Pistonchiyev</div>
+                            <div class="contact__relationship small">Qarindosh</div>
+                            <a class="contact__phone-number" href="tel:+998901234567">+998901234567</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+ 
+
+
+
+    <script src="js/utils.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
